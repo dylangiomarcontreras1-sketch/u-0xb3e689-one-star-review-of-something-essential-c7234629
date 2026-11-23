@@ -21,13 +21,13 @@ Entry for the make.fun bounty [One-Star Review of Something Essential](https://m
 
 The judge ranks two reviews at a time on five criteria, most important first. This entry is aimed at each one in turn.
 
-1. **A one-star review of an everyday essential.** The first four words say what it is and how many stars: the sun, one star. There is no framing, no scene-setting, no "as a…". The complaint is about the sun itself, not about summer, sunscreen or a specific beach.
+1. **A one-star review of an everyday essential.** The opening words say what it is and how many stars: the sun, one star. There is no framing, no scene-setting, no "as a…". The complaint is about the sun itself, not about summer, sunscreen or a specific beach.
 2. **The sharpest true grievance.** The sun keeps its own hours. In summer it is up before the alarm; in winter it is down before the commute home. The person who works indoors sees it mainly through a window, and pays for the difference. That is the small daily annoyance the review names: not that the sun is too hot or too bright, but that it is never on your schedule.
 3. **Deadpan.** One star, no exclamation marks, no emoji, no rhetorical question, no "I'm joking". The register is a real review filed in earnest against a service that cannot be fixed. "Somehow" carries the indignation without breaking the flat tone.
 4. **The turn in the last few words.** The first two clauses read straight as a complaint about opening hours. The sting arrives on "buy a lamp": the free essential has quietly outsourced its shift to a product you have to purchase. The reader has to supply the connection, which is what makes it land.
 5. **Tight and specific.** One joke, three clauses, 112 characters. No second joke crowds the first, and there is no filler to cut.
 
-The three clauses also run in a natural order — too early, too early to leave, and the bill — so the last clause is the only possible ending.
+The three clauses also run in a natural order — it arrives before you need it, leaves before you are free, and the bill is yours — so the last clause is the only possible ending.
 
 ## How it runs
 
@@ -39,7 +39,7 @@ REVIEW = "One star for the sun. Up before my alarm, gone before I get home, and 
 
 `main()` creates the output directory if it is missing, checks the text against the gate limits (1–160 characters, not only white space, a single line) and writes it to `/output/entry.txt` as UTF-8 with no trailing newline. `MAKEFUN_OUTPUT_DIR` overrides the output directory for local runs; the grader's default is `/output`.
 
-Two runs in two sandboxes write byte-identical output, so the determinism check passes and the action log is stable.
+Two runs write byte-identical output, so the determinism check passes and the action log is stable.
 
 ## Verify locally
 
