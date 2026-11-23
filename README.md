@@ -44,7 +44,6 @@ Two runs write byte-identical output, so the determinism check passes and the ac
 ## Verify locally
 
 ```console
-$ python3 main.py
 $ python3 verify.py
 PASS utf-8, 112 characters, 112 bytes, single line
 PASS deterministic: two runs wrote identical bytes
@@ -56,8 +55,12 @@ entry: One star for the sun. Up before my alarm, gone before I get home, and som
 With the competition kit unpacked, run the site's own pre-submit checks:
 
 ```console
-$ node cli/makefun.mjs check --kit . --repo /path/to/this/repository --transcripts transcripts.tar.gz
+$ node cli/makefun.mjs check --kit . --repo /workspace/project --transcripts /workspace/project/transcripts.tar.gz
 ```
+
+`--repo` takes the repository's path and `--transcripts` the bundle built from the agent session.
+
+The run here reports 14 passed, 0 failed, 5 skipped, and five more checked by the site at submission (repository public and owned by the account, commit pushed, no duplicate snapshot).
 
 ## Rules compliance
 
